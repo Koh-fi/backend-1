@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from tienda import views as app1
+from tienda2 import views as app2
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("hola/", app1.display),
+    path("ahora/", app1.displayDateTime),
+    path("saludo/", app2.saludo)
 ]
