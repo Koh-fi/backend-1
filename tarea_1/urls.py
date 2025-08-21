@@ -26,3 +26,9 @@ urlpatterns = [
     path("ahora/", app1.displayDateTime),
     path("saludo/", app2.saludo)
 ]
+
+#urlpatterns = [
+#    path('admin/', admin.site.urls),
+#    path("hola/", include('tienda.urls')),
+#    path("ahora/", include('tienda2.urls'))
+#]
